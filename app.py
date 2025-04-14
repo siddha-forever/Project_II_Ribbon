@@ -7,7 +7,7 @@ import joblib
 model = joblib.load("random_forest_model.pkl")
 scaler_X = joblib.load("scaler_X_rf.pkl")
 
-st.title("Nano FET Id Prediction using Random Forest")
+st.title("Nano-Ribbon FET Id Prediction App")
 
 st.markdown("Enter the following parameters to predict the Drain Current (Id):")
 
