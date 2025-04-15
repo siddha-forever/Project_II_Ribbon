@@ -12,16 +12,16 @@ st.title("Nano-Ribbon FET Id Prediction App")
 st.markdown("Enter the following parameters to predict the Drain Current (Id):")
 
 # User inputs
-vg_input = st.number_input("Vg (in V)", min_value=0.0, max_value=5.0, step=0.1)
-vd_input = st.number_input("Vd (in V)", min_value=0.0, max_value=5.0, step=0.1)
-gate_input = st.number_input("Gate Length (nm)", min_value=1.0, max_value=100.0, step=0.1)
-channel_input = st.number_input("Channel Thickness (nm)", min_value=1.0, max_value=50.0, step=0.1)
-sio2_input = st.number_input("SiO2 Thickness (nm)", min_value=0.1, max_value=10.0, step=0.1)
-hfo2_input = st.number_input("HfO2 Thickness (nm)", min_value=0.1, max_value=10.0, step=0.1)
-work_function_input = st.number_input("Work Function (eV)", min_value=4.0, max_value=5.5, step=0.1)
+vg_input = st.number_input("Vg (in V)", min_value=0.0, max_value=2.0, step=0.1)
+vd_input = st.number_input("Vd (in V)", min_value=0.0, max_value=2.0, step=0.1)
+gate_input = st.number_input("Gate Length (nm)", min_value=4.0, max_value=10.0, step=0.1)
+channel_input = st.number_input("Channel Thickness (nm)", min_value=2.0, max_value=20.0, step=0.1)
+sio2_input = st.number_input("SiO2 Thickness (nm)", min_value=1.3, max_value=3.0, step=0.1)
+hfo2_input = st.number_input("HfO2 Thickness (nm)", min_value=1.3, max_value=3.0, step=0.1)
+work_function_input = st.number_input("Work Function (eV)", min_value=4.3, max_value=5.0, step=0.1)
 trap_input = st.selectbox("Trap Charge Present?", ["No", "Yes"])
 trap_input_val = 1.0 if trap_input == "Yes" else 0.0
-trap_concentration_input = st.number_input("Trap Charge Concentration", min_value=0.0, max_value=1e20, step=1e18)
+trap_concentration_input = st.number_input("Trap Charge Concentration", min_value=0.0, max_value=1e15, step=1e18)
 
 # Prediction button
 if st.button("Predict Id"):
