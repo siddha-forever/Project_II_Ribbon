@@ -8,8 +8,8 @@ model = joblib.load("random_forest_model.pkl")
 scaler_X = joblib.load("scaler_X_rf.pkl")
 
 st.title("Nano-Ribbon FET Id Prediction App")
-
 st.markdown("Enter the following parameters to predict the Drain Current (Id):")
+st.header("Input Parameters")
 
 # User inputs
 vg_input = st.number_input("Vg (in V)", min_value=0.0, max_value=2.0, step=0.1)
