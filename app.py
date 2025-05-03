@@ -15,7 +15,7 @@ st.header("Input Parameters")
 
 # User inputs
 vg_input = st.number_input("Vg (in V)", min_value=0.0, max_value=2.0, step=0.1)
-vd_input = st.number_input("Vd (in V)", min_value=0.0, max_value=2.0, step=0.1)
+vd_input = st.number_input("Vd (in V)", min_value=0.0, max_value=2.0, step=0.01)
 gate_input = st.number_input("Gate Length (nm)", min_value=4.0, max_value=10.0, step=0.1)
 channel_input = st.number_input("Channel Thickness (nm)", min_value=2.0, max_value=20.0, step=0.1)
 sio2_input = st.number_input("SiO2 Thickness (nm)", min_value=1.3, max_value=3.0, step=0.1)
