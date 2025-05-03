@@ -23,7 +23,7 @@ This application predicts the **Drain Current (Id)** of a **Nano-Ribbon Field-Ef
 ---
 
 ## 🖼️ Screenshots
-![App Screenshot]()  
+![App Screenshot](nano-ribbon.png)  
 *Example of the app interface showing input fields and the prediction result.*
 
 ---
@@ -52,8 +52,7 @@ This application predicts the **Drain Current (Id)** of a **Nano-Ribbon Field-Ef
 
 ---
 ## Access the App
-- Open your browser and go to:
-- https://project-ii-nanowire.streamlit.app/
+- Open your browser and go to: [Nano-Ribbon FET Id Prediction App](https://project2ribbon.streamlit.app/)
 
 ---
 
